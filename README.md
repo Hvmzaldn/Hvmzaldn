@@ -1,12 +1,24 @@
-- 👋 Hi, I’m @Hvmzaldn
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+# Boolean-Calculator
 
-<!---
-Hvmzaldn/Hvmzaldn is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Boolean calculator for lex and yacc which performs operations like not, and, or, nor, xnor, nand, etc.
+Check [grammar_specifications](grammar_specifications) file for more information about grammar used in this calculator.
+
+# How to compile 
+
+ ```C
+ flex bcalc.l
+ bison bcalc.y -d
+ gcc bcalc.tab.c -ll -ly
+ ```
+ or use single command make
+ 
+ ```c
+ make
+ ````
+# How to Run
+
+ ```c
+ ./a.out
+ ````
+
+ After running the a.out file, your calculator runs and you have to enter the input. e.g., 1 xor 0.
